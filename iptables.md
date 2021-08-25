@@ -31,8 +31,8 @@ Rules--> chains
 
 #### example
 
-eth0-> wlan
-eth1-> lan
+<br>eth0-> wlan
+<br>eth1-> lan
 ```bash
 sudo iptables --table nat --append POSTROUTING --out-interface eth0 -j MASQUERADE
 sudo iptables --append FORWARD --in-interface eth1 -j ACCEPT
