@@ -398,15 +398,15 @@ misc::skeleton
 
 
 #### Resource
-[How To Attack Kerberos 101 ](https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html)
-[Active Directory (AD) Attacks & Enumeration at the Network Layer - Lares](https://www.lares.com/blog/active-directory-ad-attacks-enumeration-at-the-network-layer/)
-[Detecting Kerberoasting Activity – Active Directory Security (adsecurity.org)](https://adsecurity.org/?p=3458)
-[Attack & Detect — Kerbrute / Active Directory User Enumeration | by Domdalcerro | Medium](https://medium.com/@domdalcerro/attack-detect-kerbrute-active-directory-user-enumeration-2b63b2d16c3a)
-[WADComs](https://wadcoms.github.io/)
-[Kerberos (II): How to attack Kerberos? (tarlogic.com)](https://www.tarlogic.com/blog/how-to-attack-kerberos/)
-[Active Directory Exploitation Cheat Sheet (awesomeopensource.com)](https://awesomeopensource.com/project/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet)
-[Explain like I’m 5: Kerberos – roguelynn](https://www.roguelynn.com/words/explain-like-im-5-kerberos/)
-[Blog - Coding Towards Chaotic Good - harmj0y](http://www.harmj0y.net/blog/blog/)
+-   [How To Attack Kerberos 101 ](https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html)
+-   [Active Directory (AD) Attacks & Enumeration at the Network Layer - Lares](https://www.lares.com/blog/active-directory-ad-attacks-enumeration-at-the-network-layer/)
+-   [Detecting Kerberoasting Activity – Active Directory Security (adsecurity.org)](https://adsecurity.org/?p=3458)
+-   [Attack & Detect — Kerbrute / Active Directory User Enumeration | by Domdalcerro | Medium](https://medium.com/@domdalcerro/attack-detect-kerbrute-active-directory-user-enumeration-2b63b2d16c3a)
+-   [WADComs](https://wadcoms.github.io/)
+-   [Kerberos (II): How to attack Kerberos? (tarlogic.com)](https://www.tarlogic.com/blog/how-to-attack-kerberos/)
+-   [Active Directory Exploitation Cheat Sheet (awesomeopensource.com)](https://awesomeopensource.com/project/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet)
+-   [Explain like I’m 5: Kerberos – roguelynn](https://www.roguelynn.com/words/explain-like-im-5-kerberos/)
+-   [Blog - Coding Towards Chaotic Good - harmj0y](http://www.harmj0y.net/blog/blog/)
 
 -   [https://medium.com/@t0pazg3m/pass-the-ticket-ptt-attack-in-mimikatz-and-a-gotcha-96a5805e257a](https://medium.com/@t0pazg3m/pass-the-ticket-ptt-attack-in-mimikatz-and-a-gotcha-96a5805e257a)[](https://medium.com/@t0pazg3m/pass-the-ticket-ptt-attack-in-mimikatz-and-a-gotcha-96a5805e257a)
 -   [https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/as-rep-roasting-using-rubeus-and-hashcat](https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/as-rep-roasting-using-rubeus-and-hashcat)[](https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/as-rep-roasting-using-rubeus-and-hashcat)
