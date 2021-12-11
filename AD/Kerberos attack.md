@@ -28,12 +28,12 @@
 -   **User Portion**: `Validity Timestamp, Session Key, Encrypts with the TGT session key`.
 
 
-![[Pasted image 20211210103921.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/AD/Screenshot/Pasted%20image%2020211210103921.png)
 
 
 ### Kerberos Authentication Overview 
 
-   ![[Pasted image 20211210104409.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/AD/Screenshot/Pasted%20image%2020211210104409.png)
 
 - **AS-REQ - 1.)** The client requests an Authentication Ticket or Ticket Granting Ticket (TGT).
 
@@ -286,7 +286,7 @@ $krb5tgs$23$*SQLService$CONTROLLER.LOCAL$controller.local/SQLService*$88866f9426
 ```bash
 Rubeus.exe asreproast
 ```
-![[Pasted image 20211210213638.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/AD/Screenshot/Pasted%20image%2020211210213638.png)
 
 
 *GetNPUsers*
