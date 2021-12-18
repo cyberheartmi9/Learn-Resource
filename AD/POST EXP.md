@@ -473,5 +473,5 @@ msf5 exploit(windows/local/persistence) >
 
 ## Resources
 
-[PowerSploit/PowerView.ps1 ](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)
+[PowerSploit/PowerView.ps1 ](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)<br>
 https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993
