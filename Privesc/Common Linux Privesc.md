@@ -18,8 +18,7 @@ Rarely when doing a CTF or real-world penetration test, will you be able to gain
  
  **Privilege Tree:**
  
- ![[Pasted image 20220219105016.png]]
- 
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Privesc/screenshots/Pasted%20image%2020220219105016.png)
  
  **`There are two main privilege escalation variants:`**
 
