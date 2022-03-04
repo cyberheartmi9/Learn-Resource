@@ -451,5 +451,5 @@ C:\Users\admin\Desktop\vulnerable-apps\oscp>
 
 #### Resource
 - [Pentest-Cheatsheets/buffer-overflows.rst at master · Tib3rius/Pentest-Cheatsheets (github.com)](https://github.com/Tib3rius/Pentest-Cheatsheets/blob/master/exploits/buffer-overflows.rst)
-- https://github.com/cyberheartmi9/Vulnerable-By-Design/tree/master/Exploits/windows%20bufferoverflow
+- [Windows Bufferoverflow Exploit](https://github.com/cyberheartmi9/Vulnerable-By-Design/tree/master/Exploits/windows%20bufferoverflow)
 
