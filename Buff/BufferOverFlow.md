@@ -48,7 +48,8 @@ while True:
 
 ```
 
-![[1.png]]
+
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Buff/screenshots/1.png)
 
 
 
@@ -122,7 +123,8 @@ print("Exploit Done")
 ```
 
 
-![[2.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Buff/screenshots/2.png)
+
 
 crash address in `EIP 6F43396E` 
 
@@ -172,7 +174,7 @@ print("Exploit Done")
 stack layout look like `[Padd=AAA's][EIP=BBBB][shellcode=C's]`
 
 
-![[3.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Buff/screenshots/3.png)
 
 
 
@@ -201,7 +203,8 @@ print()
 
 `!mona bytearray`
 
-![[5.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Buff/screenshots/5.png)
+
 
 
 
@@ -240,7 +243,9 @@ print("Exploit Done")
 - compare byte of array in mona folder with what in stack by using `ESP 0185FA30` pointer.
 
 
-![[6.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Buff/screenshots/6.png)
+
+
 
 ```
 !mona compare -f C:\mona\oscp\bytearray.bin -a 0185FA30
@@ -251,14 +256,19 @@ print("Exploit Done")
 - TIPs
 add 4 bytes random `DDDD` after bad char which will help you when detect they no bad char that end string like `\x00` 
 
-![[7.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Buff/screenshots/7.png)
+
 
 
 **`Finding the JMP ESP address`**
 
 `!mona jmp -r esp -cpb "\x00"`
 
-![[8.png]]
+
+
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Buff/screenshots/8.png)
+
+
 
 address will write in backward `1234` in exploit will be `\x4\x3\x2\x1`  (little endian)
 
@@ -307,7 +317,8 @@ print("Exploit Done")
 
 
 
-![[9.png]]
+![alt text](https://github.com/cyberheartmi9/Learn-Resource/blob/main/Buff/screenshots/9.png)
+
 
 
 **` Exploiting the System`**
